@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
 /*
-Here is the English translation of your content:
-
 1. Datasource instance should not be created inside useEffect: Creating a new
  Datasource instance every time the component mounts is not ideal. Although
   useEffect only runs once in this case, a better approach would be to manage 
