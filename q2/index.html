@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="swap-container">
+    <h1>swap</h1>
+    <form id="swap-form">
+
+      <div class="form-group">
+        <label for="from-amount">Amount to send:</label>
+        <input type="number" id="from-amount" placeholder="0.00" required min="0" step="any">
+      </div>
+
+  
+      <div class="form-group">
+        <label for="from-token">Choose currency</label>
+        <select id="from-token" required></select>
+      </div>
+
+
+      <div class="swap-arrow">⇅</div>
+
+  
+      <div class="form-group">
+        <label for="to-token">Choose target currency</label>
+        <select id="to-token" required></select>
+      </div>
+
+  
+      <div class="form-group">
+        <label for="to-amount">Amount to receive</label>
+        <input type="text" id="to-amount" placeholder="0.00" readonly>
+      </div>
+
+    
+      <button type="submit" id="swap-button">CONFIRM SWAP</button>
+    </form>
+
+ 
+    <p id="error-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
